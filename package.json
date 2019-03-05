@@ -1,0 +1,9 @@
+{
+  "name": "twue",
+  "version": "0.1.0",
+  "description": "Compile Vue-components on the fly",
+  "main": "app.js",
+  "repository": "git@github.com:/baumanno/Twue.git",
+  "author": "Oliver Baumann <oliver.baumann@mailbox.org>",
+  "license": ""
+}
