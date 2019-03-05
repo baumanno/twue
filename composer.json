@@ -1,0 +1,18 @@
+{
+    "name": "baumanno/twue",
+    "description": "Compile Vue-components to Twig on the fly and immediately check the output.",
+    "type": "project",
+    "require": {
+        "paneon/php-vue-to-twig": "^0.14.1",
+        "symfony/routing": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Oliver Baumann",
+            "email": "oliver.baumann@mailbox.org"
+        }
+    ]
+}
