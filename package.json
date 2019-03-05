@@ -5,5 +5,13 @@
   "main": "app.js",
   "repository": "git@github.com:/baumanno/Twue.git",
   "author": "Oliver Baumann <oliver.baumann@mailbox.org>",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.1",
+    "vue": "^2.6.8",
+    "vuex": "^3.1.0",
+    "webpack": "^4.29.6"
+  }
 }
