@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 
 use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Slim\App;
 use Slim\Exception\MethodNotAllowedException;
 use Slim\Exception\NotFoundException;
@@ -12,9 +14,11 @@ $app = new App();
 
 $container = $app->getContainer();
 
-$container[ApiController::class] = function (ContainerInterface $c) {
-    return new ApiController($c);
-};
+$app->get('/', function(ServerRequestInterface $req, ResponseInterface $res) {
+    $res->getBody()->write("Just a test");
+
+    return $res;
+});
 
 $app->group('/api/v1', function () {
     $this
